@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B054044243881AD00D06CB6 /* UserDefaultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B054043243881AD00D06CB6 /* UserDefaultsController.swift */; };
+		6B05404624388AA600D06CB6 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B05404524388AA600D06CB6 /* Location.swift */; };
+		6B0540482438977600D06CB6 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0540472438977600D06CB6 /* API.swift */; };
+		6B05404A24389CF700D06CB6 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B05404924389CF700D06CB6 /* Identifier.swift */; };
+		6B05404C2438A20000D06CB6 /* Date+isoFormatted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B05404B2438A20000D06CB6 /* Date+isoFormatted.swift */; };
+		6B05404E2438A77800D06CB6 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B05404D2438A77800D06CB6 /* LocationManager.swift */; };
 		6B9457B02437CF1300B99AB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9457AF2437CF1300B99AB1 /* AppDelegate.swift */; };
 		6B9457B22437CF1300B99AB1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9457B12437CF1300B99AB1 /* SceneDelegate.swift */; };
 		6B9457B42437CF1300B99AB1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9457B32437CF1300B99AB1 /* ViewController.swift */; };
@@ -35,7 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6B9457AC2437CF1300B99AB1 /* ShareLocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShareLocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B054043243881AD00D06CB6 /* UserDefaultsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsController.swift; sourceTree = "<group>"; };
+		6B05404524388AA600D06CB6 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		6B0540472438977600D06CB6 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		6B05404924389CF700D06CB6 /* Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
+		6B05404B2438A20000D06CB6 /* Date+isoFormatted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+isoFormatted.swift"; sourceTree = "<group>"; };
+		6B05404D2438A77800D06CB6 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		6B9457AC2437CF1300B99AB1 /* Locativity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Locativity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B9457AF2437CF1300B99AB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6B9457B12437CF1300B99AB1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6B9457B32437CF1300B99AB1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -89,7 +101,7 @@
 		6B9457AD2437CF1300B99AB1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6B9457AC2437CF1300B99AB1 /* ShareLocation.app */,
+				6B9457AC2437CF1300B99AB1 /* Locativity.app */,
 				6B9457C22437CF1500B99AB1 /* ShareLocationTests.xctest */,
 				6B9457CD2437CF1500B99AB1 /* ShareLocationUITests.xctest */,
 			);
@@ -106,6 +118,12 @@
 				6B9457B82437CF1500B99AB1 /* Assets.xcassets */,
 				6B9457BA2437CF1500B99AB1 /* LaunchScreen.storyboard */,
 				6B9457BD2437CF1500B99AB1 /* Info.plist */,
+				6B054043243881AD00D06CB6 /* UserDefaultsController.swift */,
+				6B05404524388AA600D06CB6 /* Location.swift */,
+				6B0540472438977600D06CB6 /* API.swift */,
+				6B05404924389CF700D06CB6 /* Identifier.swift */,
+				6B05404B2438A20000D06CB6 /* Date+isoFormatted.swift */,
+				6B05404D2438A77800D06CB6 /* LocationManager.swift */,
 			);
 			path = ShareLocation;
 			sourceTree = "<group>";
@@ -145,7 +163,7 @@
 			);
 			name = ShareLocation;
 			productName = ShareLocation;
-			productReference = 6B9457AC2437CF1300B99AB1 /* ShareLocation.app */;
+			productReference = 6B9457AC2437CF1300B99AB1 /* Locativity.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6B9457C12437CF1500B99AB1 /* ShareLocationTests */ = {
@@ -261,7 +279,13 @@
 			files = (
 				6B9457B42437CF1300B99AB1 /* ViewController.swift in Sources */,
 				6B9457B02437CF1300B99AB1 /* AppDelegate.swift in Sources */,
+				6B05404624388AA600D06CB6 /* Location.swift in Sources */,
+				6B05404A24389CF700D06CB6 /* Identifier.swift in Sources */,
+				6B05404C2438A20000D06CB6 /* Date+isoFormatted.swift in Sources */,
+				6B054044243881AD00D06CB6 /* UserDefaultsController.swift in Sources */,
+				6B0540482438977600D06CB6 /* API.swift in Sources */,
 				6B9457B22437CF1300B99AB1 /* SceneDelegate.swift in Sources */,
+				6B05404E2438A77800D06CB6 /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,8 +465,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hackthecrisis2020.ShareLocation;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackthecrisis2020.Locativity;
+				PRODUCT_NAME = Locativity;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -459,8 +483,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hackthecrisis2020.ShareLocation;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackthecrisis2020.Locativity;
+				PRODUCT_NAME = Locativity;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

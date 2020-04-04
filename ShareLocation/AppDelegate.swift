@@ -1,20 +1,9 @@
-//
-//  AppDelegate.swift
-//  ShareLocation
-//
-//  Created by Julia Friberg on 2020-04-03.
-//  Copyright © 2020 Julia Friberg. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        LocationManager.shared.updateLocationTracking()
         return true
     }
 
