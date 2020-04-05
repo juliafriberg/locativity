@@ -4,6 +4,7 @@ import CoreLocation
 class ViewController: UIViewController {
     @IBOutlet var shareButton: UIButton!
     @IBOutlet var idLabel: UILabel!
+    @IBOutlet var changeCodeButton: UIButton!
 
     let locationManager = LocationManager.shared
 
@@ -24,6 +25,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        changeCodeButton.layer.cornerRadius = 12
+        shareButton.layer.cornerRadius = 35
 
         if let id = UserDefaults.retrieveID() {
             anonymousCode = id;
@@ -49,11 +53,12 @@ class ViewController: UIViewController {
     }
 
     private func updateButtonText() {
-        shareButton.setTitle(isSharing ? "Stop" : "Start", for: .normal)
+        shareButton.setImage(isSharing ? #imageLiteral(resourceName: "pause") : #imageLiteral(resourceName: "play"), for: .normal)
+        shareButton.contentEdgeInsets.left = isSharing ? 20 : 24
     }
 
     private func updateAnonymousCodeText() {
-        idLabel.text = "Your anonymous code is \(anonymousCode)"
+        idLabel.text = anonymousCode
     }
 }
 
