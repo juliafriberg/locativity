@@ -1,0 +1,27 @@
+#map { height: 90vh; }
+
+#contentContainer {
+    border: 1px black solid;
+}
+
+h2 {
+    color: #0C3186;
+    margin-right: 2em;
+}
+
+#sidebar {
+        margin-top: 1em;
+        min-width: 250px;
+        max-width: 250px;
+        min-height: 90vh;
+}
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+#graphCanvas {
+    height: 90vh;
+    width: 100%;
+}
